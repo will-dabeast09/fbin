@@ -1,7 +1,7 @@
 ## fbin ##
 fbin converts frames/image to a binary file, with a 256 color palette for each frame.
 ---
-## instructions ##
+### instructions ###
 run main.py  
 select the folder containing your frames/images
 select the name and directory for the new file
