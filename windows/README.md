@@ -51,7 +51,7 @@ Both Cinema and Gallery don't use a file system; they use expect an unformatted 
 
 #### For CINEMA  
 
-1. In the video's directory ```ffmpeg -i input.mp4 -ss 0 -to 00:10:00 -vf scale = 160:96 -r 10.75 frames/frame_%04d.png```
+1. In the video's directory ```ffmpeg -i input.mp4 -ss 0 -to 00:10:00 -vf scale=160:96 -r 10.75 frames/frame_%04d.png```
     * You of course can change the command to your needs. Anywhere from 10 - 12 fps will look good
 2. Run FBin. For example, ```fbin frames video.bin 2 2``` 
     * Either put ```fbin.exe``` in the same folder as your video, or include it in the system environment variables  
