@@ -4,7 +4,7 @@ A utility that converts frames/images to a binary file, with a 256-color palette
 
 ## Instructions
 ***If you're on Windows, you can follow the instructions in fbin/windows***  
-***If you're on a Linux based system, you can follow the instructions in fbin/linux***
+***If you're on a Linux based system, you can follow the instructions in fbin/linux***  
 If you have neither, or for some reason want the python version, follow these steps:
 1. Run `main.py`
 2. Select the folder containing your frames/images
