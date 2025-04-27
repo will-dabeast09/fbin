@@ -23,7 +23,7 @@ Cinema and Gallery. It follows this format: 512-byte palette data, image data, e
 
 Example:
 fbin -i input.mp4 -o output.bin -ss 00:00:05 -to 00:00:15 -s 160:96 -r 10.8 -q 0:100 -b 4 -d 0.75
-Running without flags will use the default values.v
+Running without flags will use the default values.
 ```
 
 ```Credits:
