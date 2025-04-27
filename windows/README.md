@@ -1,4 +1,7 @@
-***dependencies***
+# FBin  
+FBin is a command line tool written in C that converts a video into a binary file to be used with programs such as  
+Cinema and Gallery. It follows this format: 512-byte palette data, image data, etc...
+
 * You must have ffmpeg installed
 
 ---
@@ -21,13 +24,13 @@
 Example:
 fbin -i input.mp4 -o output.bin -ss 00:00:05 -to 00:00:15 -s 160:96 -r 10.8 -q 0:100 -b 4 -d 0.75
 Running without flags will use the default values.v
+```
 
----
-
-Credits:
+```Credits:
     2025 by William Wierzbowski (WillDaBeast555).
 
     This program utilizes the following libraries:
+        FFmpeg: https://ffmpeg.org/
         libimagequant: Kornel Lesiński.
         stb: Sean Barrett.
 ```
