@@ -10,7 +10,8 @@ The images use BGR1555 format, and each frame has a 256 color palette.
 ---
 
 ## Install cargo via rust to build the imagequant lib
-```curl https://sh.rustup.rs -sSf | sh  
+```
+curl https://sh.rustup.rs -sSf | sh  
 source $HOME/.cargo/env  
 cargo --version  
 ```
