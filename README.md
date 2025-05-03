@@ -1,5 +1,5 @@
 # FBin  
-FBin does high quality quantization on a  video and saves it in this specific binary format:  
+FBin scales and does high quality quantization on a video and saves it in this specific binary format:  
 |       output.bin       
 |------------------------
 |palette (2 * num_colors)
