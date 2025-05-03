@@ -8,7 +8,7 @@ FBin does high quality quantization on a  video and saves it in this specific bi
 |image
 |etc...
 
-**Temporily, and non-Windows users and those using Gallery will need to use the python**  
+**Temporily, and non-Windows users and those using Gallery will need to use the python (it will say not responding, just wait)**  
 **In the future, FBin will be only for Cinema, and IBin will be for Gallery, and FBin will be ported for Linux users**
 
 ## Command Line Usage
