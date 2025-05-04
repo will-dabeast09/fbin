@@ -3,12 +3,17 @@ To use FBin on Linux distros, you can simply copy the executable, fbin, from lin
 In the terminal, do something like:  
 ```bash  
 cd path/to/input/folder/
-./fbin
+./fbin  
 ```
+You may get permission errors. Type:  
+```bash
+chmod +x fbin  
+```  
+Then run the executable again.  
 For a full list of commands, type:  
 ```bash
-./fbin --help
-```
+./fbin --help  
+```  
 ## Note
 This has only been tested on Ubuntu. If FBin linux does not work on your distro or version, let me know and chances are I'll port it.  
 Then you can temporarily use the Python file in v1.0.0. 
