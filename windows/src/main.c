@@ -10,11 +10,11 @@
 */
 
 #include <direct.h>
-#include "include/libimagequant.h"
+#include "../include/libimagequant.h"
 #define STB_IMAGE_IMPLEMENTATION
-#include "include/stb_image.h"
+#include "../include/stb_image.h"
 #define STB_IMAGE_WRITE_IMPLEMENTATION
-#include "include/stb_image_write.h"
+#include "../include/stb_image_write.h"
 #include <omp.h>
 #include <time.h>
 #include <windows.h>
@@ -145,7 +145,7 @@ int main(int argc, char *argv[]) {
                 }
             } else if ((strcmp(arg, "-p") == 0) || (strcmp(arg, "--palette") == 0)) {
                 if (i + 1 < argc) {
-                    min_brightness = atoi(argv[i + 1]);
+                    num_colors = atoi(argv[i + 1]);
                     i++;
                 } else {
                     printf("missing argument after %s\n", arg);
@@ -225,7 +225,7 @@ int main(int argc, char *argv[]) {
         int batch_size;
         int processing_errors = 0;
         int current_frame = 0;
-        clock_t start_time, end_time;
+        double start_time, end_time;
         double elapsed_time;
 
         HANDLE hConsole;
@@ -284,7 +284,7 @@ int main(int argc, char *argv[]) {
             SetConsoleCursorInfo(hConsole, &cursorInfo);
         }
         
-        start_time = clock();
+        start_time = omp_get_wtime();
 
         system("cls");
         
@@ -421,8 +421,8 @@ int main(int argc, char *argv[]) {
         }
         
         {   //get elapsed time
-            end_time = clock();
-            elapsed_time = (double)(end_time - start_time) / CLOCKS_PER_SEC;
+            end_time = omp_get_wtime();
+            elapsed_time = (double)(end_time - start_time);
             printf("\nprocessed in %lf seconds\n", elapsed_time);
         }
         {   //prepare to terminate program
