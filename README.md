@@ -30,7 +30,7 @@ Example:
 fbin -i input.mp4 -o output.bin -ss 00:00:05 -to 00:00:15 -s 160:96 -r 10.8 -q 0:100 -b 4 -d 0.75 -p 256
 Running without flags will use the default values.
 ```
-**Linux users should prefix the fbin executable with ./ to when running**  
+**Linux users should prefix the fbin executable with ./ to run**  
 
 ## Notes about FBin
 * For [cinema](https://github.com/will-dabeast09/cinema), my video player for the TI-84 Plus CE, never change num_colors, as it expects a specific format  
